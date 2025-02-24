@@ -1,0 +1,45 @@
+**Various print statements Usability in GO**
+1. print
+Basic output without formatting. Doesn’t add a newline, so the output stays on the same line.
+ex: print("Hello")
+    print("World!")
+output: HelloWorld!
+print: Simple, no newline. Used for continuous output on the same line.
+
+2. println
+Prints with automatic newline at the end. Useful for simple, human-readable output.
+ex: println("Hello")
+    println("World!")
+Output: 
+Hello
+World!
+println: Prints with a newline, used for quick, simple printing.
+
+3. printf
+Formatted output where you control how values are displayed using placeholders (like %d, %s, etc.). Does not add a newline by default (but you can manually add \n).
+ex: name := "Alice"
+    age := 30
+    printf("Name: %s, Age: %d\n", name, age)
+Output: Name: Alice, Age: 30
+printf: Custom formatting with placeholders, no newline unless specified.
+%%%%%%%%%%
+
+**Pointers**
+Pointers: A pointer is a variable that stores the memory address of another variable. Instead of holding a value directly, a pointer holds the address where the value is stored.
+
+📌 Why Use Pointers?
+Modify function arguments directly (pass by reference). ✅ & → Address-of operator (gets memory address). ✅ * → Dereference operator (accesses/modifies value at that address).
+Efficient memory usage (avoid copying large data). Work with dynamic data structures (like linked lists, trees).
+ex: x := 10 → Declares an integer x with value 10. //  p := &x → p stores the memory address of x (pointer to x).
+*p → Dereferences the pointer to access or modify x. //  *p = 20 → Changes the value at memory address p, so x is now 20.
+
+**What is Make, & its uses**
+Make: In Go, the make function is used to create slices, maps, and channels dynamically. It is particularly useful for slices when you want to preallocate memory.
+ ex: slice := make([]T, length, capacity)
+    where:
+    T is the type of the slice.
+    length is the initial size of the slice (number of elements it holds initially).
+    capacity (optional) is the total allocated space for the slice.
+
+
+
