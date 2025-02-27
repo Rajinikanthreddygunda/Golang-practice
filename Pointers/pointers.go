@@ -1,6 +1,8 @@
 package pointers
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //Task: Create a program to swap two numbers using pointers.
 

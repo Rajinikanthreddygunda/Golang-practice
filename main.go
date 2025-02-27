@@ -50,7 +50,8 @@ func main() {
 
 	loops.PrimeNums()
 
-	pointers.PointersSwapNums(14, 28)
+	a, b := 10, 20
+	pointers.PointersSwapNums(&a, &b)
 	//pointers.DoubleTheValue(5)
 
 }

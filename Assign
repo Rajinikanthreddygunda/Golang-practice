@@ -1,0 +1,29 @@
+Assignment 1: Employee Management System
+Use these: Structs, Methods, Pointers, Slices, Maps
+Problem Statement:Create a simple Employee Management System that allows adding employees, updating their salary, and displaying their details.
+Requirements:
+1. Define a struct Employee with fields:
+    * ID (int)
+    * Name (string)
+    * Salary (float64)
+2. Implement methods:
+    * UpdateSalary(newSalary float64) → Updates the salary of an employee.
+    * Display() → Prints employee details.
+3. Use a map to store employees (map[int]*Employee).
+4. Implement functions:
+    * AddEmployee(emp *Employee, db map[int]*Employee) → Adds an employee to the map.
+    * RemoveEmployee(id int, db map[int]*Employee) → Removes an employee by ID.
+
+
+Assignment 2: Temperature Converter
+Use these: Methods, Receivers, Pointers
+Problem Statement:Create a program that converts temperatures between Celsius and Fahrenheit.
+Requirements:
+1. Define a struct Temperature with a Value (float64).
+2. Implement methods:
+    * ToFahrenheit() → Converts from Celsius to Fahrenheit.
+    * ToCelsius() → Converts from Fahrenheit to Celsius.
+3. Use pointers to modify the temperature directly.
+Formula:
+* °F = (°C × 9/5) + 32
+* °C = (°F - 32) × 5/9
